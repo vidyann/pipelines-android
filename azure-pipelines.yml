@@ -57,3 +57,8 @@ steps:
       $ANDROID_HOME/platform-tools/adb devices
       
       echo "Emulator started"
+- task: AppCenterDistribute@3
+  inputs:
+    appFile: 
+    releaseNotesOption: 'input'
+    destinationType: 'groups'
