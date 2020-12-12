@@ -60,8 +60,8 @@ steps:
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'testappcenter'
-    appSlug: 'vinara-microsoft.com/Sample-Android-App'
-    appFile: '/'
+    appSlug: '$(APP_CENTER_SLUG)'
+    appFile: '$(APP_FILE)'
     releaseNotesOption: 'input'
     releaseNotesInput: 'release 3.5'
     destinationType: 'groups'
