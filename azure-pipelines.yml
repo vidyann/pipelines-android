@@ -61,7 +61,7 @@ steps:
   inputs:
     serverEndpoint: 'testappcenter'
     appSlug: 'vinara-microsoft.com/Sample-Android-App'
-    appFile: '**/*.apk'
+    appFile: '/'
     releaseNotesOption: 'input'
     releaseNotesInput: 'release 3.5'
     destinationType: 'store'
