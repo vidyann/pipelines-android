@@ -60,7 +60,7 @@ steps:
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'testappcenter'
-    appSlug: '$(APP_CENTER_SLUG)'
+    appSlug: 'vinara-microsoft.com/Sample-Android-App'
     appFile: '$(build.artifactStagingDirectory)'
     releaseNotesOption: 'input'
     releaseNotesInput: 'release 3.5'
