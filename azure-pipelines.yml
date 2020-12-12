@@ -59,6 +59,10 @@ steps:
       echo "Emulator started"
 - task: AppCenterDistribute@3
   inputs:
-    appFile: 
+    serverEndpoint: 'testappcenter'
+    appSlug: 'vinara-microsoft.com/Sample-Android-App'
+    appFile: '**/*.apk'
     releaseNotesOption: 'input'
-    destinationType: 'groups'
+    releaseNotesInput: 'release 3.5'
+    destinationType: 'store'
+    destinationStoreId: 'a43ac65a-513e-48ae-a11b-288c5f6ed4b1'
