@@ -59,7 +59,7 @@ steps:
       echo "Emulator started"
 - task: AppCenterDistribute@3
   inputs:
-    serverEndpoint: 'testappcenter1'
+    serverEndpoint: 'testappcenter2'
     appSlug: 'vinara-microsoft.com/Sample-Android-App'
     appFile: '$(build.artifactStagingDirectory)'
     symbolsOption: 'Android'
