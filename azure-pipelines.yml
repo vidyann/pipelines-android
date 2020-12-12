@@ -64,5 +64,5 @@ steps:
     appFile: '/'
     releaseNotesOption: 'input'
     releaseNotesInput: 'release 3.5'
-    destinationType: 'store'
+    destinationType: 'groups'
     destinationStoreId: 'a43ac65a-513e-48ae-a11b-288c5f6ed4b1'
