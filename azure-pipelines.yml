@@ -61,7 +61,7 @@ steps:
   inputs:
     serverEndpoint: 'testappcenter'
     appSlug: '$(APP_CENTER_SLUG)'
-    appFile: '$(APP_FILE)'
+    appFile: '/'
     releaseNotesOption: 'input'
     releaseNotesInput: 'release 3.5'
     destinationType: 'groups'
