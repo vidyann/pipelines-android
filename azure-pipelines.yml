@@ -20,6 +20,13 @@ steps:
     tasks: 'assembleDebug test'
   displayName: gradlew assembleDebug test
 
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksignerKeystoreFile: 'android.jks'
+    apksignerKeystorePassword: '$(keystorePass)'
+    apksignerKeystoreAlias: '$(keystoreAlias)'
+    apksignerKeyPassword: '$(keyPass)'
 - task: CopyFiles@2
   inputs:
     contents: '**/*.apk'
