@@ -17,8 +17,8 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug test'
-  displayName: gradlew assembleDebug test
+    tasks: 'assembleRelease test'
+  displayName: gradlew assembleRelease test
 
 - task: AndroidSigning@3
   inputs:
